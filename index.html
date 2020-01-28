@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sille Hvedehave</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+            <input type="checkbox" />
+
+            <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+            <ul id="menu">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Info</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <a href="https://erikterwan.com/" target="_blank">
+                    <li>Show me more</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="top">
+        <div class="top_billede">
+            <img src="Billeder/logo.png" alt="sille">
+        </div>
+    </div>
+
+
+    <div id="om">
+        <div class="om_billede">
+            <img src="Billeder/mig.jpg" alt="sille">
+        </div>
+
+
+        <div class="om_boks">
+            <h2>ABOUT ME</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laborum possimus animi quod aspernatur sequi iste facilis corrupti rerum, culpa officiis autem labore tempore, omnis fugit velit mollitia a corporis.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laborum possimus animi quod aspernatur sequi iste facilis corrupti rerum, culpa officiis autem labore tempore, omnis fugit velit mollitia a corporis.</p>
+        </div>
+
+    </div>
+
+    <div id="portfolio">
+        <div class="porfolio_tekst">
+            <h2>MY WORK</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum debitis deserunt repellendus labore laudantium pariatur, dolore.</p>
+        </div>
+        <div id="mine_opgaver">
+            <div class="first_box"></div>
+            <div class="second_box"></div>
+            <div class="third_box"></div>
+            <div class="fourth_box"></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body></html>

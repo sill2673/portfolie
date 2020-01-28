@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+}
+
+body {
+    /*    background-color: #4b4a52;*/
+    background-color: rgba(76, 74, 87, 0.69);
+}
+
+h2 {
+    color: #efeded;
+    font-size: 3rem;
+    font-family: 'Teko', sans-serif;
+}
+
+p {
+    color: #efeded;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+
+/****    menu     ****/
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    /* make it look decent enough */
+    /*  background: #232323;*/
+    color: #cdcdcd;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+    z-index: 1;
+
+    /*
+    -webkit-user-select: none;
+    user-select: none;
+*/
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: #9b9b9b;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    /*    -webkit-touch-callout: none;*/
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+    position: absolute;
+    width: 100vw;
+    height: 79vh;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: rgba(255, 255, 255, 0.85);
+    list-style-type: none;
+    /*    -webkit-font-smoothing: antialiased;*/
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 40px;
+    font-family: 'Teko', sans-serif;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+
+/****    top    ****/
+
+
+#top {}
+
+
+.top_billede {
+    display: flex;
+    justify-content: center;
+    margin-top: 55vw;
+}
+
+.top_billede img {
+    display: flex;
+    width: 30vw;
+}
+
+
+/****    om     ****/
+
+#om {
+    margin-top: 400px;
+    /*    background-color: white;*/
+}
+
+.om_billede {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.om_billede img {
+    width: 60vw;
+}
+
+.om_boks h2 {
+    text-align: center;
+}
+
+.om_boks p {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+
+/****     portfolio    ****/
+
+
+#portfolio {
+    background-image: url(Billeder/marble1.png);
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 1600px;
+}
+
+.porfolio_tekst h2 {
+    padding-top: 100px;
+    color: #5d5d5d;
+    text-align: center;
+}
+
+.porfolio_tekst p {
+    color: #5d5d5d;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#mine_opgaver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.first_box {
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    margin: 20px;
+    display: flex;
+}
+
+.second_box {
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    margin: 20px;
+    display: flex;
+}
+
+.third_box {
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    margin: 20px;
+    display: flex;
+}
+
+.fourth_box {
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    margin: 20px;
+    display: flex;
+}
