@@ -179,6 +179,9 @@ body {
 
 #top {}
 
+.top_tekst {
+    display: none;
+}
 
 .top_billede {
     display: flex;
@@ -189,6 +192,10 @@ body {
 .top_billede img {
     display: flex;
     width: 30vw;
+}
+
+.pil {
+    display: none;
 }
 
 .right_billede {
@@ -450,6 +457,7 @@ footer img {
     .top_tekst {
         padding-left: 300px;
         padding-top: 250px;
+        display: inherit;
     }
 
     .top_tekst h3 {
@@ -461,6 +469,10 @@ footer img {
         z-index: 5;
     }
 
+    .pil {
+        display: inherit;
+    }
+
     .top_tekst h4 {
         color: black;
         font-family: 'Playfair Display', serif;
@@ -469,6 +481,90 @@ footer img {
         font-weight: 100;
         padding-top: 50px;
         padding-left: 20px;
+    }
+
+    .downArrow {
+        position: absolute;
+        bottom: 30%;
+        left: 34%;
+    }
+
+    .bounce {
+        -moz-animation: bounce 3s infinite;
+        -webkit-animation: bounce 3s infinite;
+        animation: bounce 3s infinite;
+    }
+
+    @-moz-keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            -moz-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        40% {
+            -moz-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+
+        60% {
+            -moz-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+
+    @-webkit-keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        40% {
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+
+        60% {
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        40% {
+            -moz-transform: translateY(-30px);
+            -ms-transform: translateY(-30px);
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+
+        60% {
+            -moz-transform: translateY(-15px);
+            -ms-transform: translateY(-15px);
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
     }
 
     /*
@@ -484,8 +580,8 @@ footer img {
     .top_billede img {
         display: flex;
         width: 250px;
-    }
-*/
+    }*/
+
 
     .right_billede {
         display: inherit;
